@@ -1,0 +1,55 @@
+# Local IDE settings and Python caches
+.idea/
+.venv/
+.chainlit/
+.files/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+data/processed/
+/data/raw/
+data/silver/tmp*.csv
+/data/gold/*.db
+/data/gold/.gold-*
+
+# Harness credentials
+env.json
+.env
+.env.*
+!.env.example
+
+# Intermediate source and audit layers stay local.
+/data/silver/
+/data/metadata/
+/artifacts/
+
+# Local runtime output, databases, credentials, and packaging artifacts
+*.log
+logs/
+*.db
+*.db-*
+*.sqlite
+*.sqlite3
+*.sqlite-*
+*.sqlite3-*
+*.db.lock
+*.pem
+*.key
+venv/
+env/
+.cache/
+.mypy_cache/
+.coverage
+.coverage.*
+htmlcov/
+coverage.xml
+build/
+dist/
+*.egg-info/
+/data/evaluations/
+.DS_Store
+Thumbs.db
+
+# Deliberately distributed snapshot; review provenance before committing.
+!/data/gold/airport_gold.db
